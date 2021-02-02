@@ -1,0 +1,25 @@
+<app-header></app-header>
+
+<div class="container" *ngFor="let oc of oceania">
+<div class="flag">
+  <img [src]="oc.flag" alt="">
+</div>
+<div class="info">
+  <h1>{{oc.name}}</h1>
+  <p>Native name: {{oc.nativeName}}</p>
+  <p>Population: {{oc.population}}</p>
+  <p>Region: {{oc.region}}</p>
+  <p>Sub Region: {{oc.subregion}}</p>
+  <p>Capital: {{oc.capital}}</p>
+  
+</div>
+
+<div class="domain">
+  <p>Top Lavel Domain{{oc.topLevelDomain}}</p>
+  <p>Currencies: {{oc.currencies.code}}</p>
+  <p>Languages: {{oc.languages.name}}</p>
+</div>
+<div class="countries">
+  <p> {{oc.borders}}</p>
+</div>
+</div>

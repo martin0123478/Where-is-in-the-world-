@@ -1,0 +1,19 @@
+<div class="container">
+  <div *ngFor="let country of countries" class="country">
+    <div class="image-container">
+      <img [src]="country.flag" alt="image" class="image">
+    </div>
+    
+    <div class="infomation">
+
+     <h1>{{country.name}}</h1>
+    <p>{{country.population}}</p>
+    <p>{{country.region}}</p>
+    <p>{{country.capital}}</p>
+    </div>
+    
+  
+    
+  </div>
+  
+</div>

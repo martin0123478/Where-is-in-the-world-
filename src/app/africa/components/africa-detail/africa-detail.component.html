@@ -1,0 +1,25 @@
+<app-header></app-header>
+
+<div class="container" *ngFor="let af of africa">
+<div class="flag">
+  <img [src]="af.flag" alt="">
+</div>
+<div class="info">
+  <h1>{{af.name}}</h1>
+  <p>Native name: {{af.nativeName}}</p>
+  <p>Population: {{af.population}}</p>
+  <p>Region: {{af.region}}</p>
+  <p>Sub Region: {{af.subregion}}</p>
+  <p>Capital: {{af.capital}}</p>
+  
+</div>
+
+<div class="domain">
+  <p>Top Lavel Domain{{af.topLevelDomain}}</p>
+  <p>Currencies: {{af.currencies.code}}</p>
+  <p>Languages: {{af.languages.name}}</p>
+</div>
+<div class="countries">
+  <p> {{af.borders}}</p>
+</div>
+</div>

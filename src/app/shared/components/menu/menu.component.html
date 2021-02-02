@@ -1,0 +1,20 @@
+<div class="menu-container">
+  <div class="form-container">
+    <form action="">
+      <input matInput type="text" placeholder="buscar">
+    </form>
+
+  </div>
+
+  <div class="menu">
+    <button mat-button [matMenuTriggerFor]="menu" class="men">Filter by Region</button>
+  <mat-menu #menu="matMenu">
+    <button routerLink="/africa" mat-menu-item >Africa</button>
+    <button routerLink="/america" mat-menu-item>America</button>
+    <button routerLink="/asia" mat-menu-item>Asia</button>
+    <button routerLink="/europa" mat-menu-item>Europa</button>
+    <button routerLink="/oceania" mat-menu-item>Oceania</button>
+  </mat-menu>
+  
+  </div>
+</div>

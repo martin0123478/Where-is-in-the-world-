@@ -1,0 +1,19 @@
+<div class="container">
+  <div *ngFor="let af of africa" class="country">
+    <div class="image-container">
+      <img [src]="af.flag" alt="image" class="image">
+    </div>
+    
+    <div class="infomation">
+     <h1>{{af.name}}</h1>
+    <p>{{af.population}}</p>
+    <p>{{af.region}}</p>
+    <p>{{af.capital}}</p>
+    <!-- <p>{{af.numericCode}}</p> -->
+    </div>
+    <a [routerLink]="['/africa',af.name]">Detalle</a>
+  
+    
+  </div>
+  
+</div  >

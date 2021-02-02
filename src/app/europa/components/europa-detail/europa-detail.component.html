@@ -1,0 +1,25 @@
+<app-header></app-header>
+
+<div class="container" *ngFor="let eu of europe">
+<div class="flag">
+  <img [src]="eu.flag" alt="">
+</div>
+<div class="info">
+  <h1>{{eu.name}}</h1>
+  <p>Native name: {{eu.nativeName}}</p>
+  <p>Population: {{eu.population}}</p>
+  <p>Region: {{eu.region}}</p>
+  <p>Sub Region: {{eu.subregion}}</p>
+  <p>Capital: {{eu.capital}}</p>
+  
+</div>
+
+<div class="domain">
+  <p>Top Lavel Domain{{eu.topLevelDomain}}</p>
+  <p>Currencies: {{eu.currencies.code}}</p>
+  <p>Languages: {{eu.languages.name}}</p>
+</div>
+<div class="countries">
+  <p> {{eu.borders}}</p>
+</div>
+</div>
